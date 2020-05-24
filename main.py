@@ -44,7 +44,6 @@ class TicTacToe(Tk):
         square.bind('<Button-1>', lambda e: None)
         self.moves += 1
         winner = self.win()
-        print(winner)
         if winner or self.moves == 9:
             for square in self.squares:
                 square.bind('<Button-1>', lambda e: None)
